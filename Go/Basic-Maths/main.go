@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"gobasicmaths/addition"
+	"gobasicmaths/basic"
 )
 
 
 func main(){
 	//basic maths
 	fmt.Println("Basic Maths .................*****************......................")
-	addition.Add()
+	basic.Add()
+	basic.Sub()
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"gobasicmaths/algorithms"
 	"gobasicmaths/basic"
 )
 
@@ -13,4 +14,5 @@ func main(){
 	basic.Sub()
 	basic.Mul()
 	basic.Div()
+	algorithms.NaiveAlgorithm()
 }

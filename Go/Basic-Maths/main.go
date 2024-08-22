@@ -11,4 +11,5 @@ func main(){
 	fmt.Println("Basic Maths .................*****************......................")
 	basic.Add()
 	basic.Sub()
+	basic.Mul()
 }

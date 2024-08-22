@@ -62,7 +62,7 @@ func do_naive(num1 int, numb2 int)int{
 	mod2 := numb2 % int(b)
 	
 	//get quotient
-	quot1:= (num1-mod1) / 100
+	quot1:= (num1-mod1) / int(b)
 	quot2:= numb2 / int(b)
 	
 	//multiply

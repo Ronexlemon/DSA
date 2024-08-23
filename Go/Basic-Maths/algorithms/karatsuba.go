@@ -13,6 +13,8 @@ smaller numbers that are roughly half the size of the original x and y.
 
 
 func Karatsuba(){
+	b:=10
+	c:-10
 
 
 }

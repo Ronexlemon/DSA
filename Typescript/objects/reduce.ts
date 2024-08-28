@@ -237,12 +237,17 @@ const cusdTotalAmount =()=>{
 
 }
 
-//get all items that have the same specific token name
-const celoTokenArray = ()=>{
-    const celoArray = objs.filter((token)=>token.Token === "Celo")
-    return celoArray
-}
+//get all cusd objects where amount is greater than 100
+const cusdAmountGreater = () => {
+    const cusdTT = objs.reduce((tokens, token) => 
+        (token.Token === "cusd" && token.Amount > 100) ? (tokens.push(token), tokens) : tokens
+    , [] as typeof objs);
+
+    return cusdTT;
+};
+
+
 
 console.log("Total Amount",getTotalAmount())
 console.log("cusd Total Amount",cusdTotalAmount())
-console.log("Celo Token Array",celoTokenArray())
+console.log("All cusd Token",cusdAmountGreater())

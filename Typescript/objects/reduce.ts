@@ -246,6 +246,20 @@ const cusdAmountGreater = () => {
     return cusdTT;
 };
 
+const groupTokensByYear = () => {
+    const groupedTokens = objs.reduce((acc, token) => {
+      const { year } = token;
+      
+      // Check if the year key exists in the accumulator
+      acc[year] = acc[year] ? [...acc[year], token] : [token];
+      
+      return acc;
+    }, {} as Record<number, typeof objs>); // Using a record to store tokens grouped by year
+  
+    return groupedTokens;
+  };
+  
+  console.log("Tokens grouped by year", groupTokensByYear());
 
 
 console.log("Total Amount",getTotalAmount())

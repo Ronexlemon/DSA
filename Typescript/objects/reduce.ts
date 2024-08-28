@@ -1,4 +1,4 @@
-const objs = [
+export const objs = [
     {
         "Token": "Celo",
         "Amount": 100,
@@ -7,7 +7,8 @@ const objs = [
         "BlockNumber": 123456,
         "BlockHash": "0x1234567890abcdef",
         "From": "0x1234567890abcdef",
-        "To": "0x9876543210fedcba"
+        "To": "0x9876543210fedcba",
+        "year":2024
     },
     {
         "Token": "cusd",
@@ -17,7 +18,8 @@ const objs = [
         "BlockNumber": 123457,
         "BlockHash": "0x1234567890abcdee",
         "From": "0x1234567890abcdee",
-        "To": "0x9876543210fedcb9"
+        "To": "0x9876543210fedcb9",
+        "year":2022
     },
     {
         "Token": "Celo",
@@ -27,7 +29,8 @@ const objs = [
         "BlockNumber": 123458,
         "BlockHash": "0x1234567890abcdf0",
         "From": "0x1234567890abcdf0",
-        "To": "0x9876543210fedcb8"
+        "To": "0x9876543210fedcb8",
+        "year":2021
     },
     {
         "Token": "Celo",
@@ -37,7 +40,8 @@ const objs = [
         "BlockNumber": 123459,
         "BlockHash": "0x1234567890abcdf1",
         "From": "0x1234567890abcdf1",
-        "To": "0x9876543210fedcb7"
+        "To": "0x9876543210fedcb7",
+        "year":2020
     },
     {
         "Token": "Celo",
@@ -47,7 +51,8 @@ const objs = [
         "BlockNumber": 123460,
         "BlockHash": "0x1234567890abcdf2",
         "From": "0x1234567890abcdf2",
-        "To": "0x9876543210fedcb6"
+        "To": "0x9876543210fedcb6",
+        "year":2024
     },
     {
         "Token": "cusd",
@@ -57,7 +62,8 @@ const objs = [
         "BlockNumber": 123461,
         "BlockHash": "0x1234567890abcdf3",
         "From": "0x1234567890abcdf3",
-        "To": "0x9876543210fedcb5"
+        "To": "0x9876543210fedcb5",
+        "year":2024
     },
     {
         "Token": "Celo",
@@ -67,7 +73,8 @@ const objs = [
         "BlockNumber": 123462,
         "BlockHash": "0x1234567890abcdf4",
         "From": "0x1234567890abcdf4",
-        "To": "0x9876543210fedcb4"
+        "To": "0x9876543210fedcb4",
+        "year":2023
     },
     {
         "Token": "Celo",
@@ -77,7 +84,8 @@ const objs = [
         "BlockNumber": 123463,
         "BlockHash": "0x1234567890abcdf5",
         "From": "0x1234567890abcdf5",
-        "To": "0x9876543210fedcb3"
+        "To": "0x9876543210fedcb3",
+        "year":2021
     },
     {
         "Token": "Celo",
@@ -87,7 +95,8 @@ const objs = [
         "BlockNumber": 123464,
         "BlockHash": "0x1234567890abcdf6",
         "From": "0x1234567890abcdf6",
-        "To": "0x9876543210fedcb2"
+        "To": "0x9876543210fedcb2",
+        "year":2021
     },
     {
         "Token": "cusd",
@@ -97,7 +106,8 @@ const objs = [
         "BlockNumber": 123465,
         "BlockHash": "0x1234567890abcdf7",
         "From": "0x1234567890abcdf7",
-        "To": "0x9876543210fedcb1"
+        "To": "0x9876543210fedcb1",
+        "year":2022
     },
     {
         "Token": "Celo",
@@ -107,7 +117,8 @@ const objs = [
         "BlockNumber": 123466,
         "BlockHash": "0x1234567890abcdf8",
         "From": "0x1234567890abcdf8",
-        "To": "0x9876543210fedcb0"
+        "To": "0x9876543210fedcb0",
+        "year":2021
     },
     {
         "Token": "Celo",
@@ -117,7 +128,8 @@ const objs = [
         "BlockNumber": 123467,
         "BlockHash": "0x1234567890abcdf9",
         "From": "0x1234567890abcdf9",
-        "To": "0x9876543210fedcaf"
+        "To": "0x9876543210fedcaf",
+        "year":2024
     },
     {
         "Token": "Celo",
@@ -127,7 +139,8 @@ const objs = [
         "BlockNumber": 123468,
         "BlockHash": "0x1234567890abcdfa",
         "From": "0x1234567890abcdfa",
-        "To": "0x9876543210fedcae"
+        "To": "0x9876543210fedcae",
+        "year":2022
     },
     {
         "Token": "Celo",
@@ -137,7 +150,8 @@ const objs = [
         "BlockNumber": 123469,
         "BlockHash": "0x1234567890abcdfb",
         "From": "0x1234567890abcdfb",
-        "To": "0x9876543210fedcad"
+        "To": "0x9876543210fedcad",
+        "year":2022
     },
     {
         "Token": "Celo",
@@ -147,7 +161,8 @@ const objs = [
         "BlockNumber": 123470,
         "BlockHash": "0x1234567890abcdfc",
         "From": "0x1234567890abcdfc",
-        "To": "0x9876543210fedcac"
+        "To": "0x9876543210fedcac",
+        "year":2021
     },
     {
         "Token": "Celo",
@@ -157,7 +172,8 @@ const objs = [
         "BlockNumber": 123471,
         "BlockHash": "0x1234567890abcdfd",
         "From": "0x1234567890abcdfd",
-        "To": "0x9876543210fedcab"
+        "To": "0x9876543210fedcab",
+        "year":2020
     },
     {
         "Token": "Celo",
@@ -167,7 +183,8 @@ const objs = [
         "BlockNumber": 123472,
         "BlockHash": "0x1234567890abcdf0",
         "From": "0x1234567890abcdf0",
-        "To": "0x9876543210fedcaa"
+        "To": "0x9876543210fedcaa",
+        "year":2024
     },
     {
         "Token": "Celo",
@@ -177,7 +194,8 @@ const objs = [
         "BlockNumber": 123473,
         "BlockHash": "0x1234567890abcdf1",
         "From": "0x1234567890abcdf1",
-        "To": "0x9876543210fedca9"
+        "To": "0x9876543210fedca9",
+        "year":2022
     },
     {
         "Token": "Celo",
@@ -187,7 +205,8 @@ const objs = [
         "BlockNumber": 123474,
         "BlockHash": "0x1234567890abcdf2",
         "From": "0x1234567890abcdf2",
-        "To": "0x9876543210fedca8"
+        "To": "0x9876543210fedca8",
+        "year":2021
     },
     {
         "Token": "Celo",
@@ -197,7 +216,8 @@ const objs = [
         "BlockNumber": 123475,
         "BlockHash": "0x1234567890abcdf3",
         "From": "0x1234567890abcdf3",
-        "To": "0x9876543210fedca7"
+        "To": "0x9876543210fedca7",
+        "year":2020
     }
 ];
 
@@ -217,5 +237,12 @@ const cusdTotalAmount =()=>{
 
 }
 
+//get all items that have the same specific token name
+const celoTokenArray = ()=>{
+    const celoArray = objs.filter((token)=>token.Token === "Celo")
+    return celoArray
+}
+
 console.log("Total Amount",getTotalAmount())
 console.log("cusd Total Amount",cusdTotalAmount())
+console.log("Celo Token Array",celoTokenArray())

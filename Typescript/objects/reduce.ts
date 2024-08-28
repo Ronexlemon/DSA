@@ -207,4 +207,15 @@ const tt = objs.reduce((accumulator,token)=>accumulator + token.Amount,0)
 return tt
 }
 
+//get total amount of cusd tokens
+const cusdTotalAmount =()=>{
+    const cusdTT = objs.reduce((acc,cusdT)=>{
+      return (cusdT.Token === "cusd")? acc +cusdT.Amount :acc
+               
+    },0)
+    return cusdTT
+
+}
+
 console.log("Total Amount",getTotalAmount())
+console.log("cusd Total Amount",cusdTotalAmount())

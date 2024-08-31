@@ -200,6 +200,17 @@ export const objs = [
     {
         "Token": "Celo",
         "Amount": 190,
+        "Type": "received",
+        "Timestamp": 1643724420,
+        "BlockNumber": 123473,
+        "BlockHash": "0x1234567890abcdf1",
+        "From": "0x1234567890abcdf1",
+        "To": "0x9876543210fedca9",
+        "year":2024
+    },
+    {
+        "Token": "Celo",
+        "Amount": 190,
         "Type": "sent",
         "Timestamp": 1643724480,
         "BlockNumber": 123474,

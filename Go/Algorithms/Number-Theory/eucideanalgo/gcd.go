@@ -47,6 +47,10 @@ func gcd_three(a,b,c int64)int64{
 		gcd_ab := gcd_two(a,b)
 		return gcd_two(gcd_ab,c)
 		}
+		func gcd_four(a,b,c,d,e int64)int64{
+			gcd_ab := gcd_two(a,b)
+			return gcd_two(gcd_ab,c)
+			}
 
 func GCD(){
 	a := int64(54)

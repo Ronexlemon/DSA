@@ -128,6 +128,25 @@ class NewVisibility2 extends NewVisibility{
         this.contents = value;
     }
  }
+ 
+
+ //Abstract classes
+ abstract class Parent{
+    abstract getName():string
+    abstract getAge():number
+    PrintName=()=>{
+        return "parent"
+    }
+ }
+
+ class children extends Parent{
+    getName():string{
+        return "Children"
+    }
+    getAge():number{
+        return 20
+        }
+ }
 
 const p = new Point(10,20)
 
@@ -184,3 +203,10 @@ const g = new Box<string>("Hello")
 const gg = new Box<number>(45)
 console.log(g.contents)
 console.log(gg.contents)
+
+//Abstract
+console.log("Abstract ...................")
+const ab = new children()
+console.log(ab.PrintName())
+console.log(ab.getAge())
+console.log(ab.getName())

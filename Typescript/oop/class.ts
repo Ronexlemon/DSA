@@ -72,6 +72,63 @@ class Mary extends John{
 
     }
 }
+//oder of initialization
+class Base {
+    name = "base";
+    constructor() {
+      console.log("My name is " + this.name);
+    }
+  }
+   
+  class Derived extends Base {
+    name = "derived";
+  }
+
+  //new
+class newError extends Error{
+    constructor(message?:string){
+        super(message);
+        
+        }
+        sayHello(){
+            console.log("Hello",this.message)
+        }
+}
+
+//visibility
+class NewVisibility{
+    greet(){
+        console.log("Hello")
+    }
+    protected getName(){
+        console.log("My name is NewVisibility")
+    }
+}
+class NewVisibility2 extends NewVisibility{
+    getName(): void {
+        super.getName();
+    }}
+
+ // static
+ class WeStatic{
+    static x:number = 10
+
+    static PrintX(){
+        console.log(WeStatic.x)
+    }
+
+ }   
+
+ // Generic classes
+
+ class Box<Type>{
+    contents:Type
+
+    constructor(value:Type){
+        this.contents = value;
+    }
+ }
+
 const p = new Point(10,20)
 
 
@@ -101,3 +158,29 @@ per.talk()
 const mar = new Mary()
 mar.talk()
 mar.talk("Yes i can talk tooo")
+
+//oder of initialization
+console.log("oder of initialization")
+
+const d = new Derived()
+console.log(d)
+console.log("new keyword")
+const e = new newError("Yes its a new error")
+e.sayHello()
+//visibility
+console.log("visibility")
+const nv = new NewVisibility()
+nv.greet()
+const nv2 = new NewVisibility2()
+nv2.getName()
+//static classes
+console.log("static classes ...................")
+
+WeStatic.PrintX()
+console.log(WeStatic.x)
+//Generic classes
+console.log("Generic classes ...................")
+const g = new Box<string>("Hello")
+const gg = new Box<number>(45)
+console.log(g.contents)
+console.log(gg.contents)

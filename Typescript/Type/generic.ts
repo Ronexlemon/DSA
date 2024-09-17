@@ -52,3 +52,6 @@ const  Identity = <Type>(arg: Type): Type=> {
     return arg
   }
   console.log(LoggingIdentity("hello"))
+  console.log(LoggingIdentity({length:10,value:3}))
+
+  //using type parameter in generic

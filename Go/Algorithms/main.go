@@ -19,4 +19,6 @@ func main(){
 
 	fmt.Println("THE NUMBER THEORY ******************************888888888")
 	eucideanalgo.GCD()
+	//polynomial algorithm
+	algorithms.Multiplication()
 }

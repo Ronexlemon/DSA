@@ -130,6 +130,18 @@ const paintShape =(opts:PaintOptions)=>{
 
 }
 
+//generic types
+interface Box<T>{
+    content:T
+}
+
+//Array type
+
+const arrayDoSmothing = (value:Array<string>)=>{
+    return value.length
+
+}
+
 //index  signatures
 interface StringArray {
     [index: number]: string;
@@ -142,6 +154,9 @@ const p:Person = {name:"Lemonr",salary:1000}
 const paint:PaintOptions = {shape:{color:"Greeen"},xPos:100,yPos:300}
 const paint2:PaintOptions = {shape:{color:"Greeen"},xPos:100}
 const paint3:PaintOptions = {shape:{color:"Greeen"}}
+const box1:Box<number> ={content:20}
+const box2:Box<{length:number,height:number}> ={content:{length:20,height:30}}
+const array1:Array<string> = ["a","b","c"]
 
 //index signature
 
@@ -158,3 +173,7 @@ paintShape(paint3) //optional properties
 
 //index signature
 console.log(sig[2])
+console.log(box1.content)
+console.log(box2.content)
+//array tpe
+console.log(arrayDoSmothing(array1))

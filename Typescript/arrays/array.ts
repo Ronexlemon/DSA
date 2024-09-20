@@ -69,6 +69,14 @@ const legalAge = ArrayAges.every(checkAge) // are all ages above 0
 //with an arrow
 const legalAge2 = ArrayAges.every((age)=> age >=1)
 
+//Fill()
+/**
+ *  specified elements in an array with a value
+ *   overwrite the original array
+ * NB -> start and end position can be specified, if not, all elements will be filled
+*/
+const fill = ArrayNew.fill("Yollow") // fill the whole array with the value
+const fill2 = ArrayNew.fill("Yes have it",2,4)
 
 console.log(newArr)
 console.log(itemAtIndex0)
@@ -80,4 +88,6 @@ console.log("entries",allent())
 
 console.log("every",legalAge)
 console.log("every2",legalAge2)
+console.log("fill",fill)
+console.log("fill2",fill2)
 

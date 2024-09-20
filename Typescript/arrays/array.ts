@@ -100,6 +100,18 @@ const allcusd = objectsTokens.flatMap((value)=> Object.values(value["CUSD"]).fla
 //find the value of the first element with a value over 18
 const find = ArrayAges.find((value)=> value >=18)
 
+//FindIndex()
+/**
+ * Executes a function for each array element
+ *  returns the index of the first element that passes a test
+ * returns -1 if no match is found
+ * does not execute the function for empty elements
+ *  does not change the original array
+ */
+const findeIndex = ArrayAges.findIndex((value)=> value ==18)
+const findeIndex2 = ArrayAges.findIndex(checkAge)
+const findeIndex3 = ArrayAges.findIndex((value)=> value >18)
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -116,4 +128,9 @@ console.log("filter",above18)
 console.log("filter2",above1_2)
 console.log("filter3",allcusd)
 console.log("find",find)
+console.log("findIndex",findeIndex)
+console.log("findIndex2",findeIndex2)
+console.log("findIndex3",findeIndex3)
+
+
 

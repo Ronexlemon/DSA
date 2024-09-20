@@ -88,6 +88,18 @@ const above18 = ArrayAges.filter((value)=> value >=18)
 const above1_2 = ArrayAges.filter(checkAge)
 const allcusd = objectsTokens.flatMap((value)=> Object.values(value["CUSD"]).flatMap((value2)=> value2["ckes"]).filter((value3)=> value3.tokenAddress))
 
+//find
+
+/**
+ * returns the value of the first element thats passes a test
+ * executes a function for each array element
+ * returns undefined if no elements found
+ * does not execute the function for empty elements
+ * does not change the original array
+ */
+//find the value of the first element with a value over 18
+const find = ArrayAges.find((value)=> value >=18)
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -103,4 +115,5 @@ console.log("fill2",fill2)
 console.log("filter",above18)
 console.log("filter2",above1_2)
 console.log("filter3",allcusd)
+console.log("find",find)
 

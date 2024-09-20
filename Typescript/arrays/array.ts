@@ -78,6 +78,16 @@ const legalAge2 = ArrayAges.every((age)=> age >=1)
 const fill = ArrayNew.fill("Yollow") // fill the whole array with the value
 const fill2 = ArrayNew.fill("Yes have it",2,4)
 
+//filter
+/***
+ * creates a new array filled with elements that pass a test provided by a function
+ * does not execute the function for empty elements
+ * does not change the original array
+ */
+const above18 = ArrayAges.filter((value)=> value >=18)
+const above1_2 = ArrayAges.filter(checkAge)
+const allcusd = objectsTokens.flatMap((value)=> Object.values(value["CUSD"]).flatMap((value2)=> value2["ckes"]).filter((value3)=> value3.tokenAddress))
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -90,4 +100,7 @@ console.log("every",legalAge)
 console.log("every2",legalAge2)
 console.log("fill",fill)
 console.log("fill2",fill2)
+console.log("filter",above18)
+console.log("filter2",above1_2)
+console.log("filter3",allcusd)
 

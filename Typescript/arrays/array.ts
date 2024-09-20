@@ -112,6 +112,15 @@ const findeIndex = ArrayAges.findIndex((value)=> value ==18)
 const findeIndex2 = ArrayAges.findIndex(checkAge)
 const findeIndex3 = ArrayAges.findIndex((value)=> value >18)
 
+//Flat
+/**
+ * 
+*/
+
+const flat = objectsTokens.flatMap((value)=> value["CUSD"].flat() )
+const flat2 = objectsTokens.flat()
+
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -131,6 +140,9 @@ console.log("find",find)
 console.log("findIndex",findeIndex)
 console.log("findIndex2",findeIndex2)
 console.log("findIndex3",findeIndex3)
+console.log("flat",flat)  //returns a new array
+console.log("flat2",flat2[0])  //returns a new array
+
 
 
 

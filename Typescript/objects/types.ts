@@ -14,7 +14,7 @@ interface tokenDetails {
   interface tokenS {
     [token: string]: tokens[];
   }
-const objectsTokens: tokenS[] =[{
+export const objectsTokens: tokenS[] =[{
     "CUSD":[{
         "ckes":{
             "tokenName":"ckes",

@@ -119,6 +119,40 @@ const findeIndex3 = ArrayAges.findIndex((value)=> value >18)
 
 const flat = objectsTokens.flatMap((value)=> value["CUSD"].flat() )
 const flat2 = objectsTokens.flat()
+//Create a new array with the sub-array concatinated
+const flatArray = [[1,2],[3,4],[6,6]]
+const flatArray2 = [{"Token1":[{
+    "token11":{
+        "tokenAddress":"0x1234567890",
+        "tokenName":"Token1",
+        "tokenSymbol":"TK1",
+        "tokenDecimals":18,
+    },
+    "token12":{
+        "tokenAddress":"0x1234567890",
+        "tokenName":"Token12",
+        "tokenSymbol":"TK12",
+        "tokenDecimals":18,
+    },
+}
+]},
+{"Token2":[{
+    "token21":{
+        "tokenAddress":"0x1234567890",
+        "tokenName":"Token21",
+        "tokenSymbol":"TK21",
+        "tokenDecimals":18,
+    },
+    "token22":{
+        "tokenAddress":"0x1234567890",
+        "tokenName":"Token22",
+        "tokenSymbol":"TK22",
+        "tokenDecimals":18,
+    },
+}
+]}]
+const flatArr = flatArray.flat(2)
+const flatArr2 = flatArray2.flat()
 
 
 console.log(newArr)
@@ -142,6 +176,8 @@ console.log("findIndex2",findeIndex2)
 console.log("findIndex3",findeIndex3)
 console.log("flat",flat)  //returns a new array
 console.log("flat2",flat2[0])  //returns a new array
+console.log("The flat array",flatArr)
+console.log("The flat array 2",flatArr2)
 
 
 

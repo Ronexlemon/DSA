@@ -164,6 +164,8 @@ const flatArr2 = flatArray2.flat()
 
 const flatmap = flatArray.flatMap((elements)=>elements.filter((value)=> value >2))
 const flatmap2 = flatArray2.flatMap((elements)=> elements["Token1"])[0]?.token11
+//foreach
+const foreach1 = flatArray.flat().map((element,index)=> element *10)
 
 console.log(newArr)
 console.log(itemAtIndex0)
@@ -190,6 +192,7 @@ console.log("The flat array",flatArr)
 console.log("The flat array 2",flatArr2)
 console.log("The flatMAp array 2",flatmap)
 console.log("The flatMAp array 2",flatmap2)
+console.log("The foreach array ",foreach1)
 
 
 

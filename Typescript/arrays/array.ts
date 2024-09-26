@@ -154,6 +154,16 @@ const flatArray2 = [{"Token1":[{
 const flatArr = flatArray.flat(2)
 const flatArr2 = flatArray2.flat()
 
+//flatmap()
+/****
+ * maps all array elements and creates a new flat array
+ * creates a new array from calling a function for every array element
+ * does not execute the function for empty elements
+ * does not change the original array
+ */
+
+const flatmap = flatArray.flatMap((elements)=>elements.filter((value)=> value >2))
+const flatmap2 = flatArray2.flatMap((elements)=> elements["Token1"])[0]?.token11
 
 console.log(newArr)
 console.log(itemAtIndex0)
@@ -178,6 +188,9 @@ console.log("flat",flat)  //returns a new array
 console.log("flat2",flat2[0])  //returns a new array
 console.log("The flat array",flatArr)
 console.log("The flat array 2",flatArr2)
+console.log("The flatMAp array 2",flatmap)
+console.log("The flatMAp array 2",flatmap2)
+
 
 
 

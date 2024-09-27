@@ -164,6 +164,7 @@ const flatArr2 = flatArray2.flat()
 
 const flatmap = flatArray.flatMap((elements)=>elements.filter((value)=> value >2))
 const flatmap2 = flatArray2.flatMap((elements)=> elements["Token1"])[0]?.token11
+const flatmap3 = flatArray2.flatMap((elements)=> elements["Token1"])[0]?.token11
 //foreach
 const foreach1 = flatArray.flat().map((element,index)=> element *10)
 

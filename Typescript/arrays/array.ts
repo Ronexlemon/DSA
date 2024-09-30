@@ -204,6 +204,17 @@ const indexOf2 = indexOfArr.indexOf("Sol")
 const indexOf3 = indexOfArr.indexOf("Solidity",0)
 
 
+//isArray
+/***
+ * returns true if an object is an array, Otherwise false
+*/
+const isArr1 = [1,2,3,4,5,6,7,8,9]
+const isArr2 = 123567890
+const isArr3 = "WERTGSDAWWIOMM"
+const isArray = Array.isArray(isArr1)
+const isArray2 = Array.isArray(isArr2)
+const isArray3 = Array.isArray(isArr3)
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -239,6 +250,9 @@ console.log("The includes array 3",doesContainAtAnIndex)  //returns true if
 console.log("The index of array",indexOf)
 console.log("The index of array 2",indexOf2)
 console.log("The index of array 3",indexOf3)
+console.log("The is array",isArray)
+console.log("The is array 2",isArray2)
+console.log("The is array 3",isArray3)
 
 
 

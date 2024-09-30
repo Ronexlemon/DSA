@@ -215,6 +215,21 @@ const isArray = Array.isArray(isArr1)
 const isArray2 = Array.isArray(isArr2)
 const isArray3 = Array.isArray(isArr3)
 
+//join
+/**
+ * Returns an array as a string
+ * does not change the original array
+ *  if no separator is provided, it will use a comma
+*/
+const joinArr = ["Golang","TypeScript","Javascript","Rust"]
+const progLang = joinArr.join()
+const progLang2 = joinArr.join(" ")
+const progLang3 = joinArr.join("-")
+const progLang4 = joinArr.join("")
+const progLang5 = joinArr.join(",")
+const progLang6 = joinArr.join(" and ")
+
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -253,6 +268,12 @@ console.log("The index of array 3",indexOf3)
 console.log("The is array",isArray)
 console.log("The is array 2",isArray2)
 console.log("The is array 3",isArray3)
+console.log("The join array",progLang)
+console.log("The join array 2",progLang2)
+console.log("The join array 3",progLang3)
+console.log("The join array 4",progLang4)
+console.log("The join array 5",progLang5)
+console.log("The join array 6",progLang6)
 
 
 

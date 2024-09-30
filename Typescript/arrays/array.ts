@@ -179,6 +179,17 @@ const fromString = "ABCDEFGHIJ"
 const arr = Array.from(fromArray,((item,index)=> item + "Alfapha"))
 const arrString = Array.from(fromString)
 
+//Includes
+/****
+ * includes returns true if an array contains a specific value
+ *  returns false if an array does not contain a specific value
+ * its case sensitive
+ */
+const includeArr = ["Golang","TypeScript","Javascript","Rust"]
+const doesContain = includeArr.includes("Golang")
+const doesContain2 = includeArr.includes("Python")
+
+const doesContainAtAnIndex = includeArr.includes("Javascript",2)
 
 console.log(newArr)
 console.log(itemAtIndex0)
@@ -208,6 +219,10 @@ console.log("The flatMAp array 2",flatmap2)
 console.log("The foreach array ",foreach1)
 console.log("The from array",arr)
 console.log("The from string array",arrString)  //returns an array from any iterable object
+
+console.log("The includes array",doesContain)
+console.log("The includes array 2",doesContain2)  //returns true if the array
+console.log("The includes array 3",doesContainAtAnIndex)  //returns true if
 
 
 

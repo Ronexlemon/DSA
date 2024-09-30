@@ -168,6 +168,18 @@ const flatmap3 = flatArray2.flatMap((elements)=> elements["Token1"])[0]?.token11
 //foreach
 const foreach1 = flatArray.flat().map((element,index)=> element *10)
 
+//Array.from()
+/***
+ *  The Array.from() returns an array from any  object with a length property
+ * returns an array from any iterable object
+ */
+
+const fromArray = ["John","Kim","Yollow","Best"]
+const fromString = "ABCDEFGHIJ"
+const arr = Array.from(fromArray,((item,index)=> item + "Alfapha"))
+const arrString = Array.from(fromString)
+
+
 console.log(newArr)
 console.log(itemAtIndex0)
 console.log(anotherArray)
@@ -194,6 +206,8 @@ console.log("The flat array 2",flatArr2)
 console.log("The flatMAp array 2",flatmap)
 console.log("The flatMAp array 2",flatmap2)
 console.log("The foreach array ",foreach1)
+console.log("The from array",arr)
+console.log("The from string array",arrString)  //returns an array from any iterable object
 
 
 

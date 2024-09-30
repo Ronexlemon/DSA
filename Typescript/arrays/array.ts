@@ -185,11 +185,24 @@ const arrString = Array.from(fromString)
  *  returns false if an array does not contain a specific value
  * its case sensitive
  */
+
+
 const includeArr = ["Golang","TypeScript","Javascript","Rust"]
 const doesContain = includeArr.includes("Golang")
 const doesContain2 = includeArr.includes("Python")
 
 const doesContainAtAnIndex = includeArr.includes("Javascript",2)
+
+//indexOf
+/***
+ * returns the first index (position) of a specified value
+ * returns -1 if the value is not found
+ */
+const indexOfArr = [ "Solidity","Move","Near"]
+const indexOf = indexOfArr.indexOf("Solidity")
+const indexOf2 = indexOfArr.indexOf("Sol")
+const indexOf3 = indexOfArr.indexOf("Solidity",0)
+
 
 console.log(newArr)
 console.log(itemAtIndex0)
@@ -223,6 +236,9 @@ console.log("The from string array",arrString)  //returns an array from any iter
 console.log("The includes array",doesContain)
 console.log("The includes array 2",doesContain2)  //returns true if the array
 console.log("The includes array 3",doesContainAtAnIndex)  //returns true if
+console.log("The index of array",indexOf)
+console.log("The index of array 2",indexOf2)
+console.log("The index of array 3",indexOf3)
 
 
 

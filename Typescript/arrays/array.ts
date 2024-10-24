@@ -228,6 +228,7 @@ const progLang3 = joinArr.join("-")
 const progLang4 = joinArr.join("")
 const progLang5 = joinArr.join(",")
 const progLang6 = joinArr.join(" and ")
+const progLang7 = joinArr.join(" and yes ")
 
 
 console.log(newArr)

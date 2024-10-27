@@ -116,7 +116,7 @@ const findeIndex3 = ArrayAges.findIndex((value)=> value >18)
 /**
  * 
 */
-const language:{name:string,version:number} = [{name:"Golang",version:10}]
+//const language:{name:string,version:number} = [{name:"Golang",version:10}]
 
 const flat = objectsTokens.flatMap((value)=> value["CUSD"].flat() )
 const flat2 = objectsTokens.flat()

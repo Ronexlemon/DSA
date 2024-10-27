@@ -86,5 +86,7 @@ const status ="Paid"
 
 const newTransaction = Transactions.filter((transaction)=> transaction.amount >1000)
 const transactionWitStatusComplete = Transactions.filter((transaction)=>{if (status && transaction.status == status) return true})
+    const newFlatMap = Transactions.flatMap((transaction)=> transaction.date)
 console.log(newTransaction)
 console.log(transactionWitStatusComplete)  // Output: []
+console.log(newFlatMap)  // Output: [ 50, 300, 75,

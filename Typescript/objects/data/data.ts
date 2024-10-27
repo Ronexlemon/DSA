@@ -82,7 +82,9 @@ export const Transactions = [
 ];
 
 
+const status ="Paid"
 
 const newTransaction = Transactions.filter((transaction)=> transaction.amount >1000)
-const transactionWitStatusComplete
+const transactionWitStatusComplete = Transactions.filter((transaction)=>{if (status && transaction.status == status) return true})
 console.log(newTransaction)
+console.log(transactionWitStatusComplete)  // Output: []

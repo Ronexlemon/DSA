@@ -11,8 +11,9 @@ const Pop =()=>{
 
     console.log("......................................................")
 
-    const poplength = dataNew.pop()
+    const popelement= dataNew.pop()
     console.log("The length after pop",dataNew.length)
+    console.log(" pop element",popelement)
     console.log("Items after pop",dataNew)
 }
 

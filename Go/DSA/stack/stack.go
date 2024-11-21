@@ -17,12 +17,27 @@ func (s *Stack) push(item int){
 func (s *Stack) LIFO()([]int){
 	return s.Items
 }
+//pop
+func(s *Stack)pop(){
+	if len(s.Items) > 0{
+		s.Items = s.Items[:len(s.Items)-1]
+		}else{
+			fmt.Println("Stack is empty")
+			}
+}
 
 func main(){
 	stack := Stack{}
 	stack.push(10)
 	stack.push(20)
 	stack.push(30)
-	fmt.Println(stack.LIFO())
+	fmt.Println("INITIAL STACK",stack.LIFO())
+	stack.pop()
+	fmt.Println("AFTER POP",stack.LIFO())
+	stack.pop()
+	fmt.Println("AFTER POP",stack.LIFO())
+	stack.pop()
+	fmt.Println("AFTER POP",stack.LIFO())
+	
 	
 }

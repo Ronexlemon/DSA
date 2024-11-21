@@ -7,6 +7,7 @@ type Stack struct{
 	Items []int
 }
 
+
 //push into stack
 
 

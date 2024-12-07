@@ -15,6 +15,7 @@ const Reduce =()=>{
     console.log("new array of names",carNamesArray)
 }
 
+
 const Reducee =()=>{
     const totalPrice = dataNew.reduce((acc,cur)=>{
         return acc + cur.price

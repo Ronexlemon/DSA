@@ -111,6 +111,9 @@ const find = ArrayAges.find((value)=> value >=18)
 const findeIndex = ArrayAges.findIndex((value)=> value ==18)
 const findeIndex2 = ArrayAges.findIndex(checkAge)
 const findeIndex3 = ArrayAges.findIndex((value)=> value >18)
+const findeIndex4 = ArrayAges.findIndex((value)=> value <18)
+const findeIndex5 = ArrayAges.findIndex((value)=> value ==0)
+const findeIndex6 = ArrayAges.findIndex((value)=> value ==1)
 
 //Flat
 /**
